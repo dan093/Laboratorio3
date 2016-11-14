@@ -33,7 +33,7 @@ app.get('/db', function (request, response) {
       if (err)
        { console.error(err); response.send("Error " + err); }
       else
-       { response.render('views/db', {results: result.rows} ); }
+       { response.render('/db', {results: result.rows} ); }
     });
   });
 });
